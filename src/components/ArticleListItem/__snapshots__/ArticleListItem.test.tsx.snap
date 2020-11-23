@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div>
+  <li
+    data-testid="article-list-item"
+  >
+    <a
+      href="/article/2"
+    >
+      <span>
+        #
+        2
+      </span>
+       
+      test
+       
+    </a>
+  </li>
+</div>
+`;

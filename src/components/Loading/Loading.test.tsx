@@ -1,7 +1,13 @@
 import { render } from '../../testing/test-utils';
 import { Loading } from './Loading';
 
-test('wrapper render', () => {
-  const { getByTestId } = render(<Loading />);
-  expect(getByTestId('loading')).toBeDefined();
+test('snapshot', () => {
+  const { container } = render(<Loading />);
+  expect(container).toMatchSnapshot();
+});
+
+test('wrapper render', async () => {
+  const { findByTestId } = render(<Loading />);
+  const element = await findByTestId('loading');
+  expect(element).toBeTruthy();
 });

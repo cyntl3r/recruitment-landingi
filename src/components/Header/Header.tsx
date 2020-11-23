@@ -8,7 +8,7 @@ import styles from './Header.styles.css';
 export const Header: FunctionComponent = () => {
   const { title } = useSelector<AppState, HeaderState>((state) => state.header);
   return (
-    <h1>
+    <h1 data-testid="header">
       <Link to="/" className={styles.link}>
         Blog
       </Link>{' '}

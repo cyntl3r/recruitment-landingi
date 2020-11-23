@@ -5,8 +5,3 @@ test('snapshot', () => {
   const { container } = render(<ArticleList />);
   expect(container).toMatchSnapshot();
 });
-
-test('wrapper render', () => {
-  const { getByTestId } = render(<ArticleList />);
-  expect(getByTestId('article-list')).toBeDefined();
-});

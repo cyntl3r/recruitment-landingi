@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div>
+  <h1
+    data-testid="header"
+  >
+    <a
+      href="/"
+    >
+      Blog
+    </a>
+     
+    
+  </h1>
+</div>
+`;

@@ -1,7 +1,12 @@
 import { render } from '../../testing/test-utils';
 import { NotFound } from './NotFound';
 
-test('is wrapper render', () => {
+test('snapshot', () => {
+  const { container } = render(<NotFound />);
+  expect(container).toMatchSnapshot();
+});
+
+test('wrapper render', () => {
   const { getByTestId } = render(<NotFound />);
   expect(getByTestId('not-found')).toBeDefined();
 });

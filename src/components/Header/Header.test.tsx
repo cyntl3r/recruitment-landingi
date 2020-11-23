@@ -1,11 +1,12 @@
 import { render } from '../../testing/test-utils';
 import { Header } from './Header';
 
-test('render simple header', () => {
-  const { getByText } = render(<Header />);
-  expect(getByText('Blog')).toBeDefined();
+test('snapshot', () => {
+  const { container } = render(<Header />);
+  expect(container).toMatchSnapshot();
 });
 
-// test('render header with title', () => {
-//   const { getByText } = render(<Header />);
-// });
+test('wrapper render', () => {
+  const { getByTestId } = render(<Header />);
+  expect(getByTestId('header')).toBeDefined();
+});

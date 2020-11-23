@@ -27,7 +27,7 @@ export const ArticleComments: FunctionComponent<ArticleCommentsProps> = ({
   }, []);
 
   return (
-    <div data-testod="article-comments">
+    <div data-testid="article-comments">
       <ArticleCommentsAdd onSubmit={handleOnNewCommentSubmit} />
       <h4>Comments</h4>
       {loading ? (

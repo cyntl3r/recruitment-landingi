@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div>
+  <p
+    data-testid="not-found"
+  >
+    A website with such an address has not been found!
+  </p>
+</div>
+`;

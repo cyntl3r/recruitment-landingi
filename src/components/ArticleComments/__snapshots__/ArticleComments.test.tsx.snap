@@ -3,7 +3,7 @@
 exports[`snapshot 1`] = `
 <div>
   <div
-    data-testod="article-comments"
+    data-testid="article-comments"
   >
     <div
       data-testid="article-comments-add"

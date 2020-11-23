@@ -5,7 +5,9 @@ exports[`snapshot 1`] = `
   <div
     class="app"
   >
-    <h1>
+    <h1
+      data-testid="header"
+    >
       <a
         href="/"
       >
