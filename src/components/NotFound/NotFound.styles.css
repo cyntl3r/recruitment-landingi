@@ -1,0 +1,25 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+main {
+  max-width: 900px;
+  margin: 10vh auto 0 auto;
+}

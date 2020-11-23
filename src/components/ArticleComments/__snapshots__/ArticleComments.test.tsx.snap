@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div>
+  <div
+    data-testod="article-comments"
+  >
+    <div
+      data-testid="article-comments-add"
+    >
+      <h4>
+        Add comment
+      </h4>
+      <form>
+        <textarea
+          placeholder="Comment..."
+          required=""
+        />
+        <div>
+          <input
+            placeholder="E-mail address"
+            required=""
+            type="email"
+            value=""
+          />
+          <button
+            type="submit"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+    <h4>
+      Comments
+    </h4>
+    Loading...
+  </div>
+</div>
+`;

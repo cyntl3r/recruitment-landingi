@@ -1,0 +1,12 @@
+.link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.title::before {
+  content: '» ';
+}
