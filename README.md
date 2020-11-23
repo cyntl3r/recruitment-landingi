@@ -1,3 +1,9 @@
 # recruitment-landingi
 
-Recruitment project for Landingi sp. z o.o.
+Simple blog application based on React.
+
+## Run the application
+
+```
+npm run start
+```
