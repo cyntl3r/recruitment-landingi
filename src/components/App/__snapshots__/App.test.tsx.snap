@@ -4,6 +4,7 @@ exports[`snapshot 1`] = `
 <div>
   <div
     class="app"
+    style="display: none;"
   >
     <h1
       data-testid="header"
@@ -14,9 +15,7 @@ exports[`snapshot 1`] = `
         Blog
       </a>
        
-      <span>
-        Article List
-      </span>
+      
     </h1>
   </div>
 </div>

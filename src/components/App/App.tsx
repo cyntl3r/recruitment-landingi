@@ -1,12 +1,27 @@
-import { FunctionComponent, useEffect } from 'react';
+import { FunctionComponent, lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import { fetchArticles } from '../../actions/article';
-import { Article } from '../Article/Article';
-import { ArticleList } from '../ArticleList/ArticleList';
 import { Header } from '../Header/Header';
-import { NotFound } from '../NotFound/NotFound';
 import './App.styles.css';
+
+const ArticleList = lazy(() =>
+  import('../ArticleList/ArticleList').then((module) => ({
+    default: module.ArticleList,
+  }))
+);
+
+const Article = lazy(() =>
+  import('../Article/Article').then((module) => ({
+    default: module.Article,
+  }))
+);
+
+const NotFound = lazy(() =>
+  import('../NotFound/NotFound').then((module) => ({
+    default: module.NotFound,
+  }))
+);
 
 export const App: FunctionComponent = () => {
   const dispatch = useDispatch();

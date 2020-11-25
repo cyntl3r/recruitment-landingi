@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { App } from './components/App/App';
@@ -15,7 +15,9 @@ configureAxios({
 render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <Suspense fallback={null}>
+        <App />
+      </Suspense>
     </BrowserRouter>
   </Provider>,
   document.querySelector('main')

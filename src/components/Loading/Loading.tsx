@@ -1,13 +1,11 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 import styles from './Loading.styles.css';
 
-let isComponentMounted = false;
-
 export const Loading: FunctionComponent = () => {
   const [lastsMoreThanSecond, setLastsMoreThanSecond] = useState(false);
 
   useEffect(() => {
-    isComponentMounted = true;
+    let isComponentMounted = true;
     setTimeout(() => {
       if (isComponentMounted) {
         setLastsMoreThanSecond(true);

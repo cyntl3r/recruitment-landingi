@@ -1,4 +1,9 @@
-import React, { FunctionComponent, ReactElement, ReactNode } from 'react';
+import React, {
+  FunctionComponent,
+  ReactElement,
+  ReactNode,
+  Suspense,
+} from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../store';
@@ -13,7 +18,9 @@ const AllTheProviders: FunctionComponent<AllTheProvidersProps> = ({
 }) => {
   return (
     <Provider store={store}>
-      <BrowserRouter>{children}</BrowserRouter>
+      <BrowserRouter>
+        <Suspense fallback={null}>{children}</Suspense>
+      </BrowserRouter>
     </Provider>
   );
 };
